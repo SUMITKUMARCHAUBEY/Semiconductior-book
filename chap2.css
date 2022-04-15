@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    background-color: rgb(9, 8, 8);
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+hr{
+    background-color: rgb(72, 91, 91);
+    height: 2px;
+}
+h3{
+    padding-left: 50px;
+    /* text-align: center; */
+    padding: 20px;
+    font-size: xx-large;
+}
+section{
+    padding-left: 200px;
+}
+
+.one{
+    display: flex;
+    padding-bottom: 70px;
+    justify-content: space-between;
+}
+.formulacomp{
+    width: 250px;
+    height: 200px;
+    font-size: large;
+    margin-bottom: 30px ;
+    padding: 0px;
+    
+    
+}
+.details{
+    margin-left: 50px;
+    padding-left: 30px;
+    border: solid aqua 5px;
+    width: 25vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sformulacomp{
+    width: 300px;
+    height: 250px;
+    font-size: large;
+    padding-top: 25px;
+    padding-left: 0;
+    
+}
+.ssformulacomp{
+    width: 500px;
+    height: 300px;
+    font-size: large;
+    padding-top: 25px;
+    padding-left: 0;
+    
+}
+#for1 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for2 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for3 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for4 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for5 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for6 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for7 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for8 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for9 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for8 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for7 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for6 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for5 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for4 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for3 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for2 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for1 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for9 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+    
+}

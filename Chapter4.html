@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-4</title>
+    <link rel="stylesheet" href="Chapter4.css">
+</head>
+
+<body>
+    <h1>The Semiconductor in Equillibrium</h1>
+    <section>
+        <h3>Equillibrium distribution of electrons and holes:
+        </h3>
+        <p>The distribution of electrons:
+            <div>n(E) = g<sub>c</sub>(E) f<sub>F</sub>(E)</div>
+        </p>
+        <p> f<sub>F</sub>(E) is the Fermi Dirac probability function. <br><br> g
+            <sub>c</sub>(E) is the Density of quantum states in the conduction band.</p>
+
+        <p>Distribution of holes in valence band:
+            <div>p(E) = g<sub>v</sub>(E)[1 - f<sub>F</sub>(E)]</div>
+        </p>
+    </section>
+    <section>
+        <h3>The n<sub>0</sub> and p<sub>0</sub> equations:</h3>
+        <p>The equation for thermal equillibrium concentration of electrons:-
+            <div>n<sub>0</sub> = ∫ g<sub>c</sub>(E) f<sub>F</sub>(E) dE</div>
+        </p>
+        <p>
+            <div>n<sub>0</sub> = N<sub>c</sub> exp [-(E<sub>c</sub> - E<sub>F </sub>) / KT</div>
+        </p>
+        <div class="intrinsic">
+            <input type="text" name="density of state" id="densityOfState">N<sub>c</sub>
+            </input>
+            <input type="text" name="temperature" id="temperature">T</input>
+            <input type="text" name="fermi" id="fermi">Ef <sub>i</sub></input>
+            <input type="text" name="conduction" id="conduction">E <sub>c</sub></input>
+            <button type="submit" onclick="intrinsic()">Submit</button>
+
+            <span>Value<input type="text" name="screen" id="screen"></span>
+
+
+
+        </div>
+        <canvas id="myChart" style="width:100%;max-width:700px"> </canvas>
+
+        <p> N<sub>c</sub> is the effective density of states f<sub>n</sub> in the conduction band</p>
+        <p>The thermal equillibrium concentration of holes in the valence band is found by: <br>
+            <div>p<sub>0</sub> = ∫ g<sub>v</sub>(E) [1 - f<sub>F</sub>(E)] dE
+                <p<sub>0</sub>
+            </div>
+        </p>
+
+        <div> p<sub>0</sub> = N<sub>v</sub> exp [-(E<sub>F</sub> - E<sub>v </sub>) / KT</div>
+        </p>
+        <p> N<sub>v</sub> is the effective density of states f<sub>n</sub> in the valence band <br></p>
+        <p>At 300K Temperature: <br>
+            <div>N<sub>v</sub> ≈ 10<sup>19</sup> cm<sup>-3</sup><br> N
+
+                <sub>c</sub> ≈ 2.5 x 10<sup>19</sup> cm<sup>-3</p></div>
+                    <div class="intrinsic">
+                        <input type="text" name="density of state" id="densityOfState">N<sub>c</sub>
+                        </input>
+                        <input type="text" name="temperature" id="temperature">T</input>
+                        <input type="text" name="fermi" id="fermi">Ef <sub>i</sub></input>
+                        <input type="text" name="conduction" id="conduction">E <sub>c</sub></input>
+                        <button type="submit" onclick="intrinsic()">Submit</button>
+                     
+                        <span>Value<input type="text" name="screen" id="screen"></span>
+                        
+                    </div>    
+    </section>
+    <section>
+        <h3>Intrinsic Carrier Concentration</h3>
+        <p>
+            If E<sub>F</sub> = E<sub>fi</sub> then:
+           <div> n<sub>0</sub> = n<sub>i</sub></div>
+           <div> p<sub>0</sub> = p<sub>i</sub> = n<sub>i</sub></div>
+           <p> n<sub>i</sub><sup>2</sup> = N<sub>c</sub> N<sub>v</sub> exp [-Eg/KT] </p>
+        <p> Eg is the Bandgap Energy</p>
+        <p> n<sub>i</sub> is the constant (independent of fermi Energy)</p>
+        </p>
+        <p>Intrinsic Fermi level position:
+            <div>E<sub>Fi</sub> - E<sub>midgap</sub> = 3/4 k T ln(m<sup>*</sup><sub>p</sub> / m<sup>*</sup><sub>n</sub>)
+            </div>
+        </p>
+        <p>Kinetic Energy:
+            <div>T = (m<sup>*</sup>e<sup>4</sup>) / 2(nh)<sup>2</sup>(4πe)<sup>2</sup></div>
+        </p>
+        <p>Potential Energy: <br>
+            <div>V = -m<sup>*</sup>e<sup>4</sup> / 2(nh)<sup>2</sup>(4πe)<sup>2</sup></div>
+        </p>
+        <p>Total Energy:
+            <div>E = T+V = -m<sup>*</sup>e<sup>4</sup> / 2(nh)<sup>2</sup>(4πe)<sup>2</sup></div>
+        </p>
+    </section>
+    <section>
+        <h3>Extrinsic Semiconductor</h3>
+        <p>
+            <div>n<sub>0</sub> = n<sub>i</sub> exp [(E<sub>F</sub> - E<sub>Fi </sub>) / KT</div>
+            <div>p<sub>0</sub> = n<sub>i</sub> exp [-(E<sub>F</sub> - E<sub>Fi </sub>) / KT</div>
+        </p>
+        <p>The n<sub>0</sub> p<sub>0</sub> product
+            <div> n<sub>0</sub> p<sub>0</sub> = N<sub>c</sub> N<sub>v</sub> exp [-Eg/KT]</div>
+        </p>
+        <div>n<sub>0</sub> p<sub>0</sub> = ni<sup>2</sup></div>
+        <p>The fermi dirac integral:
+            <div>F<sub>1/2</sub>(n<sub>F</sub>) = ∫<sup>∞</sup><sub>0</sub> n<sup>1/2</sup> dn / 1+ exp (n- n<sub>F</sub>)</div>
+        </p>
+    </section>
+    <section>
+        <h3>Probability function: </h3>
+        <p>Probability function of electrons occupying the donor state is:
+            <div>n<sub>d</sub> = N<sub>d</sub> / 1+ <sup>1</sup>/<sub>2</sub> exp (Ed-Ef)/KT</div>
+        </p>
+        <p> n<sub>d</sub> is the density of electron occupying the donor level and Ed is the energy of the donor level
+        </p>
+        <p>For acceptor atoms:
+            <div>p<sub>a</sub> = Na - Na<sup>-</sup>= Na / 1+ <sup>1</sup>/<sub>g</sub>exp</div><br>
+            <div>p<sub>a</sub> = Na - Na<sup>-</sup>= Na / [1+ <sup>1</sup>/<sub>g</sub>exp (Ef - Ea)/KT]</div>
+        </p>
+        <p>
+            <h3>Complete ionisation and Freeze-Out</h3>
+            <div>
+                n<sub>d</sub> / n<sub>d</sub> + n<sub>0</sub> = 1/ {1+ (Nc/2Nd) exp [-(Ec-Ed)/ KT] }
+            </div>
+        </p>
+        <p> Ec - Ed is the ionisation energy of the donor electrons
+        </p>
+    </section>
+    <section>
+        <h3>Thermal - equillibrium Electron Concentration</h3>
+        <p>
+            If we assume complete ionisation , n<sub>d</sub> and p<sub>a</sub>are both zero,
+            <div>n<sub>0</sub> = (Nd-Na)/<sub>2</sub>√{(Nd-Na)<sup>2</sup> / 2 + ni<sup>2</sup>}
+            </div>
+        </p>
+        <p>Thermal Equillibrium Hole Concentration:
+            <div>np<sub>0</sub> = (Na-Nd)/<sub>2</sub>√{(Na-Nd)<sup>2</sup> / 2 + ni<sup>2</sup>}
+            </div>
+        </p>
+        <p>For compensated p-type semiconductor:
+            <div>n<sub>0</sub> = ni<sup>2</sup> / p<sup>0</sup> = ni<sup>2</sup> / (Na - Nd)
+            </div>
+        </p>
+    </section>
+    <section>
+        <h3>Position of Fermi Energy level </h3>
+        <div>
+            Ec - Ef = KT ln (n<sub>c</sub> / n<sub>0</sub>)
+        </div>
+        <p> If we consider a n-type semiconductor the n<sub>0</sub> ≈ Nd >> n<sub>i</sub> :
+            <div>
+                Ec-Ef = KT ln (Nc/Nd)
+            </div>
+
+        </p>
+        <div>Ef - Efi = KT ln (n<sub>0</sub> / n<sub>i</sub>)</div>
+        <p>For p-type semiconductor:
+            <div> Ef - Ev = KT ln (Nv / p<sub>0</sub>)</div>
+        </p>
+        <p>
+            If we assume Na >> n<sub>i</sub> , then:
+            <div>
+                Ef - Ev = KT ln(Nv/Na)
+            </div>
+        </p>
+        <p>
+            Relationship between the Fermi level and the intrinsic fermi level in terms of hole concentration :-
+            <div>
+                E<sub>fi</sub> - E<sub>f</sub> = KT ln (P<sub>0</sub> / n<sub>i</sub>)
+            </div>
+        </p>
+    </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="chapter4.js"></script>
+
+
+</html>

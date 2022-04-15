@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-5</title>
+    <link rel="stylesheet" href="Chapter5.css">
+</head>
+<body>
+    <header>
+    <h1>Carrier Transport</h1>
+    <hr>
+    <hr>
+    <h2>Important Formula</h2>
+    </header>
+    <hr>
+    <main>
+    <section>
+        <h3>Carrier Drift</h3>
+    <div>
+        <p>J<sub>drf</sub> = eV<sub>d</sub>
+       <br> Units:- A/cm<sup>2</sup>
+       <br>
+       <span id="ans1"></span>
+       <form action="/action.php" id="form1" onsubmit="return false">
+       <input type="number" id="v" placeholder="Enter Drift Velocity">
+       <button id="b1">Calculate</button>
+       </form>
+       
+    </p>
+    </div>
+    <div>
+        <p>The volume charge density is due to the positively charged holes <br> </p>
+         <span>J<sub>p|drf|</sub> = (e<sub>p</sub>)V<sub>dp</sub></span>
+        <p> 
+            <span id="ans2"></span>
+            <br>
+             where,
+             J<sub>p|drf| is the drift current due to holes and V<sub>dp</sub> is the average drift velocity of holes.
+            </p>
+            <form action="/action.php" id="form2" onsubmit="return false">
+            <input type="number" id="vd" placeholder="Enter Drift avg-Voltage">
+            <button id="b2">Calculate</button>   
+            </form>
+    
+         <p>The drift current due to holes is in the same direction as the applied electric field.</p>
+    </div>
+    <div> 
+        <p>The same discussion of drift applies to electrons. We may write: <br>
+         <span>J <sub>ndrf</sub> = PV <sub> dn</sub> = -(e<sub>n</sub>)V <sub> dn</sub></span></p>
+         <span id="ans3"></span>
+         <form action="/action.php" id="form3" onsubmit="return false">
+         <input type="number" id="vd1" placeholder="Enter Drift avg-Voltage">
+            <button id="b3">Calculate</button>
+            </form>
+    </div>
+    <div>
+     <p>The equation of motion of a positively charged hole in the presence of an electric field is: <br>
+        <span> F = m<sup>*</sup><sub>cp</sub> a = eE</span>
+     </p>
+     <span id="ans4"></span>
+     <form action="/action.php" id="form4" onsubmit="return false">
+     <input type="number" id="e" placeholder="Enter Electric Field">
+     <button id="b4">Calculate</button>
+    </form>
+    </div>
+    <div>
+        <p>The particle will gain an average drift velocity which, for low electric field, is directly <br> propotional to the electric field:</p>
+           
+            <br><span> V<sub>dp</sub> = μ<sub>p</sub>E </span> <br>
+            <span id="ans5"></span>
+            <form action="/action.php" id="form5" onsubmit="return false">
+            <input type="number" id="u" placeholder="Enter Hole Mobility">
+            <br>
+            <input type="number" id="e1" placeholder="Enter Electric Field">
+            <button id="b5">Calculate</button> 
+            </form>
+            <p>  μ<sub>p</sub>, is called the hole mobility </p>   
+     </div>
+
+     <div>
+            <p><div> V<sub>dp</sub> = μ<sub>n</sub>E </div></p><span id="ans6"></span> 
+            <form action="/action.php" id="form6" onsubmit="return false">
+            <input type="number" id="u1" placeholder="Enter electron Mobility">
+            
+            <br>
+            <input type="number" id="e2" placeholder="Enter Electric Field">
+            <button id="b6">Calculate</button>
+            </form> 
+            <p> μ<sub>n</sub>, is called the electron mobility and its a positive value</p>
+                
+                <p>Since both electrons and holes contribute to the drift current, 
+                    the total drift current density <br> is the sum of the individual electron and hole drift current densities: <br>
+                <div>J <sub>drf</sub> = e(μ<sub>n</sub>n+ μ<sub>p</sub>p)E ≈ eμ<sub>n</sub>N<sub>d</sub>E</div></p><span id="ans7"></span>
+                <form action="/action.php" id="form7" onsubmit="return false">
+                <input type="number" id="u2" placeholder="Enter electron Mobility">
+                  
+            <br>
+            <input type="number" id="d" placeholder="Enter n-Doping Conc.">
+            
+            <br>
+            <input type="number" id="e3" placeholder="Enter Electric Field">
+            <button id="b7">Calculate</button>
+           </form> 
+    </div>
+    </section>
+
+    <section>
+        <h4>Mobility values at T=300K and a low doping concentration:</h4>
+        <div>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Concentration</th>
+                            <th rowspan="2">μ<sub>n</sub>(cm<sup>r</sup>/v-s)</th>
+                            <th colspan="2">μ<sub>p</sub>(cm<sup>r</sup>/v-s)</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                            <td>SIlicon</td>
+                            <td>1350</td>
+                            <td>480</td>
+                        </tr>
+                        <tr>
+                            <td>Germanium</td>
+                            <td>3900</td>
+                            <td>1900</td>
+                        </tr>
+                        <tr>
+                            <td>Germanium Arsenide</td>
+                            <td>8500</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table> 
+        </div>
+    </section>    
+      
+    <section>
+            <h3>Mobility Effects</h3>
+            <div>
+                <p><span>F = m<sub>cp</sub><sup>*</sup>dv/dt = eE</span></p>
+
+            <p>integrating above : <br><div> v = eEt/m<sub>cp</sub><sup>*</sup></div></p>
+
+            <p><div> Vd<sub>peak</sub> = {eT<sub>cp</sub>/m<sup>*</sup><sub>cp</sub>}E</div></p><span id="ans8"></span>
+            <form action="/action.php" id="form8" onsubmit="return false">
+            <input type="number" id="m" placeholder="Enter m(cp) ">
+             
+            <br>
+            <input type="number" id="e4" placeholder="Enter Electric Field">
+           
+            <br>
+            <input type="number" id="t" placeholder="Enter T(cp)">
+            <button id="b8">Calculate</button> 
+            </form>
+            <br>
+            <p>The average drift velocity is one half the peak value <br>
+            <div> Vd<sub>avg</sub>=1/2(eT<sub>cp</sub>/m<sup>*</sup><sub>cp</sub>)E</div></p><span id="ans9"></span>
+            <form action="/action.php" id="form9" onsubmit="return false">
+            <input type="number" id="m1" placeholder="Enter m(cp) ">
+             
+            <br>
+            <input type="number" id="e5" placeholder="Enter Electric Field">
+             
+            <br>
+            <input type="number" id="t1" placeholder="Enter T(cp)">
+            <button id="b9">Calculate</button>  
+            </form>
+            </div>
+
+            <div>
+                <p>The hole Mobility is <br><span>μ<sub>p</sub> = Vd<sub>p</sub>/E = eT<sub>cp</sub>/m<sup>*</sup><sub>cp</sub></span></p>
+                <span id="ans10"></span>
+                <form action="/action.php" id="form10" onsubmit="return false">
+                <input type="number" id="m2" placeholder="Enter m(cp) ">
+            <br>
+            <input type="number" id="t2" placeholder="Enter T(cp)">
+            <button id="b10">Calculate</button> 
+            </form>
+                <p><span>μ<sub>n</sub> = eT<sub>cn</sub>/m<sup>*</sup><sub>cn</sub></span> <br><span id="ans11"></span>
+                    <form action="/action.php" id="form11" onsubmit="return false">
+                    <input type="number" id="m3" placeholder="Enter m(cp) ">
+             
+            <br>
+            <input type="number" id="t3" placeholder="Enter T(cp)">
+            <button id="b11">Calculate</button> 
+            </form>
+                    <br> Where T<sub>cn</sub> is the mean time between collisions for an electron</p>
+    
+                <p>If μ<sub>L</sub>as the mobility that would be observed if only lattice scattering existed,
+                    <br> then the scattering theory states that the first order: <br>
+                    <span>μ<sub>L</sub>∝ T<sup>-3/2</sup></span></p>
+    
+                    <p>Mobility that is due to lattice scattering increases as the tempreture increases <br>
+                    <div>μ<sub>1</sub> ∝ (T<sup>+3/2</sup>)/N<sub>1</sub></div><br>
+                where, N<sub>1</sub> = N<sub>d</sub><sup>+</sup> + N<sub>d</sub><sup>-</sup>, is the total ionised impurity
+            concentration.</p>
+    
+                <p><span>dt/τ = dt/τ<sub>1</sub> + dt/τ<sub>L</sub></span><br> where, τ is the mean time between any scattering event</p>
+                
+                <p>1/μ = 1/μ<sub>1</sub> +  1/μ<sub>L</sub></p>
+            </div>    
+        </section>
+        <section>
+
+            <h3>Conductivity(σ):</h3>
+            <div>
+                <p><span>J<sub>drf</sub> = e(μ<sub>n</sub>n+ μ<sub>p</sub>p)E = σE</span><br><span id="ans12"></span>
+                    <form action="/action.php" id="form12" onsubmit="return false">
+                    <input type="number" id="c" placeholder="Enter Conductivity">
+                   
+                    <br> <input type="number" id="e6" placeholder="Enter Electric Field">
+                    <button id="b12">Calculate</button> </form>
+                   <br> where, σ is the conductivity of the semiconductor material and its unit is Ω cm<sup>-1</sup></p> 
+            </div>
+
+           <div>
+            <p>The reciprocal of conductivity is "Resistivity" denoted by ρ <br>
+                <span>ρ = 1/σ = 1/e(μ<sub>n</sub>n+ μ<sub>p</sub>p)</span></p>
+                <br><span id="ans13"></span>
+                <form action="/action.php" id="form13" onsubmit="return false">
+                <input type="number" id="ue3" placeholder="Enter electron mobility ">
+                 
+                <br>
+                <input type="number" id="uh3" placeholder="Enter hole mobility ">
+                
+                <br>
+                <input type="number" id="n" placeholder="Enter electron Concentration">
+                
+                <br>
+                <input type="number" id="p" placeholder="Enter hole Concentration">
+                <button id="b13">Calculate</button> </form>
+                </div>
+             <div>
+                <p>J=I/A</p>
+                <p><span>E = V/L</span></p>
+                <p><span> I/A = σ(V/L)</span></p>
+                <p><span>σ = e(μ<sub>n</sub>n+ μ<sub>p</sub>p) ≈ e μ<sub>p</sub>p</span></p>
+               </div>
+               <div> 
+                <p>For complete ionisation: <br><span>eμ<sub>p</sub>N<sub>a</sub> ≈ 1/ρ</span></p>
+                <p><span>σ = eμ<sub>n</sub>n</span></p>
+                <p>σ = eμ<sub>n</sub>(N<sub>d</sub> - N<sub>a</sub>)</p>
+                <br>
+                <span id="ans14"></span>
+                <form action="/action.php" id="form14" onsubmit="return false">
+                <input type="number" id="d1" placeholder="Enter donor Conc.">
+                <br>
+                <input type="number" id="m4" placeholder="Enter mobility">
+                <br>
+                <input type="number" id="a" placeholder="Enter Acceptor Conc.">
+                <button id="b14">Calculate</button> </form>
+                </div>
+                <div>
+                <p>Cross Section area is: <br><span>A = I/J</span></p>
+                <p>For an intrinsic material, the conductivity is: <br>
+                <span>σ<sub>i</sub> = e(μ<sub>n</sub>n+ μ<sub>p</sub>p)n<sub>i</sub></span></p>
+                <p>1/2 mv<sup>2</sup><sub>th</sub>3/2 KT = 3/2 (0.0259) = 0.0885 ev</p>
+            </div>
+            <div>    
+                <p>Drift velocity for electrons: <br>
+                <span> V <sub>n</sub> = V <sub>s</sub> / [1+ (E <sub>on</sub> / E)<sup>2</sup></sup>] <sup>1/2</sup></span></p> <br>
+    
+                <p>Drift velocity for holes: <br>
+                    <span> V <sub>p</sub> = V <sub>s</sub> / [1+ (E <sub>op</sub> / E)</sup>]</span></p>
+                <p>For small electric fields, the drift velocity reduces to: <br>
+                <span>V <sub>n</sub> = V <sub>s</sub>. (E <sub>on</sub> / E)</span>
+                <span>V <sub>p</sub> = V <sub>s</sub>. (E / E <sub>op</sub> )</span>
+                </p>
+           </div>
+        </section>
+        <section >
+            <h3>Carrier Diffusion</h3>
+            <p><div> J <sub>|dif|</sub> = eD <sub>n</sub>d<sub>n</sub> / <sub>x</sub> = eD <sub>n</sub> Δn/Δx</div></p>
+            <p>Total current density: <br>
+                <div>  enμ<sub>n</sub>E + epμ<sub>p</sub>E + eD<sub>n</sub>∇n - eD<sub>p</sub>∇p
+            </div></p>
+        </section>
+        <section>
+            <h3>Graded Impurity Distribution</h3>
+            <p>Induced electric field:- <br>
+            <div>ⲫ = 1/e (E<sub>f</sub> - E<sub>fi</sub>)</div></p>
+            <p>electric field for one dimension: <br>
+                <div>E<sub>x</sub> = -dⲫ/dx = 1/e dE<sub>Fi</sub> / dx</div>
+            </p>
+            <p>If we assume a quasi-neautrality condition in which the electron concentration <br> is almost equal to the donor impurity concentration
+            then:    <br><div>n <sub>0</sub> = n<sub>i</sub> exp [(E<sub>F</sub> - E<sub>Fi</sub>)/KT] = N<sub>d</sub>(x)</div>
+            </p>
+            <p>E<sub>F</sub> - E<sub>Fi</sub> = KT ln(N<sub>d</sub>(x))/n<sub>i</sub></p>
+        </section>
+        <section>
+            <h3>The Einstein Relation</h3>
+            <div>J<sub>n</sub> = 0 = enμ<sub>n</sub>Ex + eDn dn/dx</div>
+            <p>The hole current must also be zero in the semiconductor. <br>
+            <div>Dp/μ<sub>p</sub> = KT/e</div></p>
+            <div>Dn/μ<sub>n</sub> = Dp/μ<sub>p</sub> = KT/e</div>
+        </section>
+        <section>
+            <h3>The Hall Effect </h3>
+            <div>F = qv x B</div>
+            <p>The magnetic field force will be exactly balanced by the induced electric field force: <br>
+            F= q[E+ V x B] = 0 <br>
+        <div>qE<sub>y</sub> = qV<sub>x</sub>B<sub>z</sub></div></p>
+        <p>The induced electric field in the 'y' direction is called 'Hall field' <br>
+        The Hall field produces a voltage acrossthe semiconductor  called the 'Hall Voltage' <br>
+    <div>V<sub>H</sub> = E<sub>H</sub>W</div></p>
+    <p>For a N-type semiconductor the Hall Voltage is: <br>
+    <div>V<sub>H</sub> = -I<sub>x</sub>B<sub>z</sub> / n<sub>ed</sub></div> <br>
+So, electron concentration is: <div>n = -I<sub>x</sub>B<sub>z</sub> / edV<sub>H</sub></div></p>
+
+    </main>
+
+    <footer>
+
+    </footer>
+       
+</body>
+<script src="chap5.js"></script>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    background-color: rgb(9, 8, 8);
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+hr{
+    background-color: rgb(47, 51, 51);
+    height: 2px;
+}
+h1{
+    text-align: center;;
+}
+.formula{
+    margin: 50px;
+
+}
+.details{
+    margin: 50px;
+}
+form{
+    margin: 40px;
+}
+#for1 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for2 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for3 input{
+    width: 150px;
+    height: 25px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: black;
+}
+#for3 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for2 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+#for1 button{
+    height: 25px;
+    background-color: rgb(134, 154, 154);
+    border-radius: 5px;
+    color: black;
+    border-color: aqua;
+}
+span{
+    padding-left: 80px;
+    padding-top: 0;
+}

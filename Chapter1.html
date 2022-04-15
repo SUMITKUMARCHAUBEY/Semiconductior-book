@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="chap1.css">
+</head>
+<body>
+    <header>
+        <h1>The Crystal Structure of Solids</h1>
+        <h2>Important Formulae</h2>
+    </header>
+    <hr>
+    <main>
+        
+        <section>
+            <h3>Theoritical Density Calculation</h3>
+            <div class="formula">
+            <p>ρ = (n.A<sub>w</sub>)/V<sub>cell</sub>.N<sub>a</sub></p>
+            </div><span id="span1"></span>
+            <form id="for1" action="/action.php" onsubmit= "return false">
+            <input type="number" id="n" placeholder="Effective Atoms">
+            <input type="number"  id="a" placeholder="Atomic Weight">
+            <input type="number"  id="V" placeholder="Unit cell Volume">
+            <button id="b1">Calculate</button>
+            </form>
+            <div class="details"><li>ρ = Theoritical Density</li>
+                <li>n = Effective Number of Atoms per unit cell</li>
+                <li>A<sub>w</sub> = Atomic Weight</li>
+                <li>V<sub>cell</sub> = Volume of the Unit cell</li>
+                <li>N<sub>a</sub> = Avogadro’s Number = 6.022*10<sup>23<sup> </li>
+                   
+                        <p>Note: Effective Number of Atoms per unit cell of different Crystal Structure<br> 
+                            <li> &nbsp&nbsp&nbsp;n<sub>SC</sub> = 1, n<sub>BCC</sub> = 2 , n<sub>FCC</sub> = 4,n<sub>HCP</sub> = 6, n<sub>DC</sub> = 8</p></li>  
+                    </div>
+        </section>
+       <hr>
+        <section>
+            <div><h3>Surface Density</h3></div>
+            <div class="formula"><p>Surface Density = (Effective number of atoms per lattice plane)/(area of lattice plane)</p></div>
+            <span id="span2"></span>
+            <form id="for2" action="/action.php" onsubmit= "return false">
+            <input type="number"  id="n1" placeholder="effective Atom">
+            <input type="number"  id="A" placeholder="Area of Lattice">
+            <button id="b2">Calculate</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <div><h3>Volume Density</h3></div>
+            <div class="formula">
+                <p>Volume Density  = (Effective number of atoms per unit cell)/(volume of unit cell)</p>
+            </div>
+            <span id="span3"></span>
+            <form id="for3" action="/action.php" onsubmit= "return false">
+            <input type="number"  id="n2" placeholder="effective Atom">
+            <input type="number"  id="v1" placeholder="Volume of unit cell">
+            <button id="b3">Calculate</button>
+            </form>
+        </section>
+    </main>
+
+<footer>
+   
+</footer>
+</body>
+<script src="chap1.js"></script>
+</html>
